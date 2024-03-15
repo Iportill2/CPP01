@@ -2,7 +2,12 @@
 
 Zombie* zombieHorde( int N, std::string name )
 {
-	(void)N;
-	Zombie *inst = new Zombie(name);
-	return(inst);
+	Zombie *horde = new Zombie[N];
+	int i = 0;
+	while(i < N)
+	{
+		horde[i].setName(name +static_cast<char>(i+48));
+		i++;
+	}
+	return(horde);
 }

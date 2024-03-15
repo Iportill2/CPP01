@@ -1,17 +1,15 @@
 #include "Zombie.hpp"
 int main()
 {
-	Zombie instance("jose");
+	int N = 4;
+	std::string s= "JoseLuis";
+	Zombie *horde =zombieHorde(N,s);
+	int i =0;
+	while(i < N)
+	{
+		horde[i].announce();
+		i++;
+	}
+	delete[] (horde);
 	return(1);
 }
-/*
-Time to create a horde of Zombies!
-Implement the following function in the appropriate file:
-Zombie* zombieHorde( int N, std::string name );
-It must allocate N Zombie objects in a single allocation. Then, it has to initialize the
-zombies, giving each one of them the name passed as parameter. The function returns a
-pointer to the first zombie.
-Implement your own tests to ensure your zombieHorde() function works as expected.
-Try to call announce() for each one of the zombies.
-Don’t forget to delete all the zombies and check for memory leaks.
-*/
