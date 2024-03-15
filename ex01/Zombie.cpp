@@ -2,21 +2,20 @@
 
 Zombie::Zombie()
 {
-std::cout << "Create nameless Zombie" << std::endl;
+	std::cout << "Contructor()" << std::endl;
 }
 Zombie::Zombie(std::string name)
 {
-	_name = name;
-	std::cout << "Create " << _name  << " Zombie" << std::endl;
-	
+	std::cout << "Create " << name  << " Zombie" << std::endl;
 }
 Zombie::~Zombie()
 {
-std::cout << "Destroy " << _name  << " Zombie" << std::endl;
+	std::cout << "Destroy " << _name  << " Zombie" << std::endl;
 }
 void	Zombie::setName(std::string name)
 {
 	this->_name = name;
+	std::cout <<"(setName)" << "Create " << _name  << " Zombie" << std::endl;
 	return ;
 }
 void Zombie::announce()

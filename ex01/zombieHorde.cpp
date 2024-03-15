@@ -2,12 +2,13 @@
 
 Zombie* zombieHorde( int N, std::string name )
 {
-	Zombie *horde = new Zombie[N];
+	Zombie *horde = new Zombie[N];//reservamos memoria para un array de Zombie
 	int i = 0;
 	while(i < N)
-	{
-		horde[i].setName(name +static_cast<char>(i+48));
+	{	//creamos la funcion setname para poder crear nombres aleatorios
+		horde[i].setName(name +static_cast<char>(i+'0'));
+		
 		i++;
 	}
-	return(horde);
+	return(horde);//devuelve un puntero de zombies
 }
