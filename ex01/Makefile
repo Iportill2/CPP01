@@ -1,9 +1,8 @@
-NAME = BraiiiiiiinnnzzzZ
+NAME = Moar_brainz!
 
 
 SRCS = main.cpp \
-	newZombie.cpp \
-	randomChump.cpp \
+	zombieHorde.cpp \
 	Zombie.cpp 
 
 CC = c++
