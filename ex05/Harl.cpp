@@ -1,11 +1,11 @@
 #include "Harl.hpp"
 Harl::Harl()
 {
-	std::cout << "Constructor!" << std::endl;
+	endl_print("Constructor!");
 }
 Harl::~Harl()
 {
-		std::cout << "Destructor!" << std::endl;
+	endl_print("Destructor!");
 }
 void Harl::complain( std::string level )
 {

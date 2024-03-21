@@ -14,10 +14,7 @@ Harl::~Harl()
 {
 	//endl_print("Destructor");
 }
-void Harl::print(std::string s)
-{
-	std::cout << s ;
-}
+
 void Harl::endl_print(std::string s)
 {
 	std::cout << s << std::endl;

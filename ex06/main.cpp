@@ -17,13 +17,11 @@ int main(int argc,char **av)
 			{
 				inst.endl_print("[ WARNING ]");
 				inst.endl_print(inst.getString_two());
-				inst.endl_print("");
 			}
 			case 3:
 			{
 				inst.endl_print("[ ERROR ]");
 				inst.endl_print(inst.getString_three());
-				inst.endl_print("");	
 				break;
 			}
 			default:

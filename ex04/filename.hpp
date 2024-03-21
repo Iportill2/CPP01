@@ -11,7 +11,6 @@ class Filename
 
 
 	public:
-		Filename();
 		Filename(std::string file, std::string s1,std::string s2);
 		~Filename();
 

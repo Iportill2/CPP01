@@ -1,8 +1,4 @@
 #include "filename.hpp"
-Filename::Filename()
-{
-	endl_print("DEFAULT Constructor");
-}
 Filename::Filename(std::string file, std::string s1,std::string s2) 
 : _file(file),_s1(s1),_s2(s2)
 {
@@ -16,7 +12,7 @@ Filename::Filename(std::string file, std::string s1,std::string s2)
 }
 Filename::~Filename()
 {
-		endl_print("Destructor");
+	endl_print("Destructor");
 }
 void Filename::print(std:: string s)
 {
