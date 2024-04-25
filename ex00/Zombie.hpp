@@ -4,16 +4,20 @@
 
 class Zombie
 {
-	public:
-
-		Zombie(std::string name);
-		~Zombie();
-
-		void announce( void );
-
 	private:
+		std::string 	_name;
+	public:
+		//CANONICAL
+						Zombie();
+						Zombie(std::string name);
+						~Zombie();
+		//GETTER
+		std::string		getName();
+		void			setName(std::string name);
 
-		std::string _name;
+		void 			announce( void );
+
+
 };
 		Zombie* newZombie( std::string name );
 		void randomChump( std::string name );
