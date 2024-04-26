@@ -1,11 +1,12 @@
 #include "filename.hpp"
-void	findReplaceWrite(std::string txt, std::string s1, std::string s2)
+void	findReplaceWrite(std::string txt, std::string s1, std::string s2,std::string filename)
 {
-	const std::string 	new_file = "file";
+	const std::string 	new_file = filename;
 	std::ofstream		outfile(new_file + ".replace");///crea un nuevo archivo
 	size_t				pos;
 	size_t 				i = 0;
-
+	if(outfile.fail())
+		std::cout << "Failed creating " << new_file << ".replace" << std::endl;
 	while (i < txt.length())
 	{
 		pos = txt.find(s1, i);
@@ -37,9 +38,9 @@ int main(int ac,char **av)
 			return (inst.endl_print("s1 is Empty!"),0);
 		if (!inst.gets2().length())
 			return (inst.endl_print("s2 is Empty!"),0);
-		while (infile.get(c))
+		while (infile.get(c) )
 			txt = txt + c;
-		findReplaceWrite(txt, inst.gets1(), inst.gets2());
+		findReplaceWrite(txt, inst.gets1(), inst.gets2(),inst.getFile());
 		infile.close();
 		return(1);
 	}
