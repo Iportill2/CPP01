@@ -19,9 +19,9 @@ int main(int ac,char **av)
 			inst.getTxt() = inst.getTxt() + c;
 		inst.findReplaceWrite();
 		infile.close();
-		return(1);
+		return(0);
 	}
 	else
 		std::cout << "Invalid arguments" << std::endl;
-	return(0);
+	return(1);
 }

@@ -43,12 +43,6 @@ void	Filename::findReplaceWrite()
 	size_t				pos;
 	size_t 				i = 0;
 
-/* 	std::cout <<"_file:" << _file << std::endl ;
-	std::cout << "_s1:" << _s1 << std::endl ;
-	std::cout << "_s2:" << _s2 << std::endl ;
-	std::cout << "new_file:" << new_file << std::endl ;
-	std::cout << "_text:" << _txt << std::endl ; */
-
 	if(outfile.fail())
 		std::cout << "Failed creating " << new_file << ".replace" << std::endl;
 	while (i < getTxt().length())
