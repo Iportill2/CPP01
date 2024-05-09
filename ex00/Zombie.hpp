@@ -1,6 +1,7 @@
 #ifndef ZOMBIE_HPP
 # define ZOMBIE_HPP
 # include <iostream>
+# include <cstdlib>
 
 class Zombie
 {
@@ -10,6 +11,8 @@ class Zombie
 		//CANONICAL
 						Zombie();
 						Zombie(std::string name);
+						Zombie(const Zombie & copy);
+		Zombie & 		operator=(Zombie const & inst);
 						~Zombie();
 		//GETTER
 		std::string		getName();

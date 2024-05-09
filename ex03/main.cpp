@@ -1,8 +1,7 @@
 #include "Weapon.hpp"
 #include "HumanA.hpp"
 #include "HumanB.hpp"
-#include <iostream>
-int main()
+static void subject()
 {
 	{
 		Weapon club = Weapon("crude spiked club");
@@ -19,5 +18,9 @@ int main()
 		club.setType("some other type of club");
 		jim.attack();
 	}
+}
+int main()
+{
+	subject();
 	return 0;
 }

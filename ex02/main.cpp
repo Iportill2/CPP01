@@ -1,5 +1,5 @@
 #include <iostream>
-int main()
+static void subject()
 {
 	std::string s="HI THIS IS BRAIN";
 	std::string *stringPTR = &s;
@@ -11,7 +11,11 @@ int main()
 	std::cout << "Value of the string variable: " << s << std::endl;
 	std::cout << "Value pointed to by stringPTR: " << *stringPTR << std::endl;
 	std::cout << "Value pointed to by stringREF: " << stringREF << std::endl;
-	return(1);
+}
+int main()
+{
+	subject();
+	return(true);
 }
 
 
