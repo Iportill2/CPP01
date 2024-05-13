@@ -39,7 +39,7 @@ std::string Filename::getTxt()
 void	Filename::findReplaceWrite()
 {
 	const std::string 	new_file = _file;
-	std::ofstream		outfile(new_file + ".replace");///crea un nuevo archivo
+	std::ofstream outfile((new_file + ".replace").c_str()); // crea un nuevo archivo
 	size_t				pos;
 	size_t 				i = 0;
 

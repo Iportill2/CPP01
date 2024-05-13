@@ -5,7 +5,7 @@ SRCS = main.cpp \
 	HumanB.cpp 
 CC = c++
 RM = rm -f
-CFLAGS = -Wall -Wextra -Werror -std=c++98 
+CFLAGS = -Wall -Wextra -Werror -std=c++98 -fsanitize=address
 OBJS = ${SRCS:.cpp=.o}
 DEPS = ${SRCS:.cpp=.d}
 %.o: %.cpp

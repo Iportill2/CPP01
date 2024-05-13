@@ -10,10 +10,17 @@ class HumanB
 		std::string _name;
 		Weapon		*_weapon;
 	public:
-		HumanB(std::string _name);
-		~HumanB(void);
-		void	setWeapon(Weapon &weapon);
-		void	attack(void);
+	//CANONICAL
+					HumanB();
+					HumanB(std::string _name);
+					HumanB(Weapon *_weapon);
+					HumanB(const HumanB & copy);
+			HumanB &operator=(HumanB const & inst);
+					~HumanB(void);
+
+		void		setWeapon(Weapon &weapon);
+		std::string getName();
+		void		attack(void);
 };
 
 #endif
