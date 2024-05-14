@@ -3,7 +3,7 @@ int main(int argc,char **av)
 {
 	Harl inst;
 	if(argc !=2)
-		inst.endl_print("Invalid arguments");
+		std::cout << "Invalid arguments" << std::endl;
 	else
 	{
 		int i=inst.cmd(av[1]);
@@ -12,18 +12,19 @@ int main(int argc,char **av)
 
 			case 2:
 			{
-				inst.endl_print("[ WARNING ]");
-				inst.endl_print(inst.getString_two());
+				std::cout << "[ WARNING ]" << std::endl;
+				std::cout << inst.getString_two() << std::endl;
 				break;
 			}
 			case 3:
 			{
-				inst.endl_print("[ ERROR ]");
-				inst.endl_print(inst.getString_three());
+				std::cout << "[ ERROR ]" << std::endl;
+				std::cout << inst.getString_three() << std::endl;
+			
 				break;
 			}
 			default:
-				inst.endl_print(inst.getString_four());
+				std::cout << inst.getString_four() << std::endl;
 		}
 	}
 }

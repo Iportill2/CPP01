@@ -14,8 +14,6 @@ class Harl
 					Harl();
 					~Harl();
 		std::string getString();
-		void 		print(std::string s);
-		void 		endl_print(std::string s);
 		int 		cmd(std::string cmd);
 		std::string getString_two();
 		std::string getString_three();

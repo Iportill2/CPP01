@@ -7,15 +7,8 @@ Harl::Harl()
 	_three = "This is unacceptable, I want to speak to the manager now.";
 	_four = "[ Probably complaining about insignificant problems ]";
 }
-Harl::~Harl()
-{
+Harl::~Harl(){}
 
-}
-
-void Harl::endl_print(std::string s)
-{
-	std::cout << s << std::endl;
-}
 int Harl::cmd(std::string cmd)
 {
 
