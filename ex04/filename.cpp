@@ -54,7 +54,7 @@ void	Filename::findReplaceWrite()
 		if (i == pos)
 		{
 			outfile << _s2;
-			i = i + _s1.length() - 1;	
+			i = i + _s1.length() - 1 ;
 		}
 		else
 			outfile << _fileContent[i];

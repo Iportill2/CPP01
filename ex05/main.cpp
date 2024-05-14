@@ -9,7 +9,7 @@ int main()
 			return (ins.endl_print("Caution you push Ctrl+D = eof"),0);
 		else
 		{
-			ins.endl_print("Please insert a command: DEBUG,INFO,WARNING;DEBUG");
+			ins.endl_print("Please insert a command: DEBUG,INFO,WARNING;ERROR");
 			std::getline (std::cin,cmd);
 			ins.complain(cmd);
 		}

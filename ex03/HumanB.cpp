@@ -25,8 +25,7 @@ HumanB::HumanB(Weapon *_weapon) : _weapon()
 HumanB::HumanB(const HumanB & copy) 
 {
 	this->_name = copy._name;
-	if(copy._weapon == NULL)
-		this->_weapon = copy._weapon;
+	this->_weapon = copy._weapon;
 }
 HumanB& HumanB::operator=(const HumanB& inst)
 {
