@@ -8,18 +8,12 @@ class Filename
 		std::string _file;
 		std::string _s1;
 		std::string _s2;
-		std::string _txt;
+
+		std::string _fileContent;
 	public:
 		Filename(std::string file, std::string s1,std::string s2);
 		~Filename();
 
-		void 			print(std:: string s);
-		void 			endl_print(std:: string s);
-		std::string 	getFile();
-		std::string 	gets1();
-		std::string 	gets2();
-
-		std::string 	getTxt();
 		void			findReplaceWrite();
 
 };

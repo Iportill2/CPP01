@@ -9,14 +9,12 @@ int main(int argc,char **av)
 		int i=inst.cmd(av[1]);
 		switch (i)
 		{
-			case 0:
-				inst.endl_print("");
-			case 1:
-				inst.endl_print("");
+
 			case 2:
 			{
 				inst.endl_print("[ WARNING ]");
 				inst.endl_print(inst.getString_two());
+				break;
 			}
 			case 3:
 			{

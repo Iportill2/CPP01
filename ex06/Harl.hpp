@@ -4,8 +4,6 @@
 class Harl
 {
 	private:
-		std::string _debug;
-		std::string _info;
 		std::string _warning;
 		std::string _error;
 		

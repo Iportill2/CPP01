@@ -5,23 +5,27 @@ int main(int ac,char **av)
 	if(ac == 4)
 	{
 		Filename inst(av[1],av[2],av[3]);
-		std::ifstream infile;
-		char c;
-
-		infile.open(inst.getFile());
-		if(infile.is_open() == false)
-			return(inst.endl_print("Cannot open the file"),0);
-		if (!inst.gets1().length())
-			return (inst.endl_print("s1 is Empty!"),0);
-		if (!inst.gets2().length())
-			return (inst.endl_print("s2 is Empty!"),0);
-		while (infile.get(c) )
-			inst.getTxt() = inst.getTxt() + c;
-		inst.findReplaceWrite();
-		infile.close();
+		
 		return(0);
 	}
 	else
 		std::cout << "Invalid arguments" << std::endl;
 	return(1);
 }
+/*
+std::ifstream iFile;
+	iFile.open(this->_filename.c_str());
+	if (iFile.fail())
+	{
+		this->status = 2;
+		return ;
+	}
+	std::string	fileContent;
+	std::string line;
+	while (std::getline(iFile, line))
+	{
+		//std::cout << line;
+		fileContent += line + "\n";
+	}
+	iFile.close();
+*/
