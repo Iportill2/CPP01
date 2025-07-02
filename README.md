@@ -216,6 +216,6 @@ make re
 
 ## 👨‍💻 Autor
 
-**Proyecto desarrollado como parte del curriculum de 42 School**
+Iker Portillo
 
 *Módulo CPP01 - Fundamentos avanzados de C++*
