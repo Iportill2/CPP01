@@ -15,7 +15,7 @@ static void subject()
 int main()
 {
 	subject();
-	return(true);
+	return(0);
 }
 
 

@@ -1,6 +1,6 @@
 #include "Zombie.hpp"
 
-/* int	main(void)
+int	main(void)
 {
 	//Crea una instancia y crea un zombie 
 	Zombie instancia("paco");
@@ -16,7 +16,7 @@
 	delete instancia1;
 	
 	return(0);
-} */
+}
 
 // int interactive()
 // {
@@ -83,7 +83,8 @@
 // 	}
 // }
 
-int main()
+// Test adicional (comentado para evaluación)
+/* int test_main()
 {
 	std::cout << "*****************" << std::endl;
 	Zombie a;
@@ -139,4 +140,5 @@ int main()
 
 	delete d;
 	//delete e;
-}
+	return(0);
+} */

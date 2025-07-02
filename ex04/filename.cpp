@@ -28,7 +28,11 @@ Filename::Filename(std::string file, std::string s1,std::string s2)
 			return;
 		}
 		while (std::getline(infile, line))
-			_fileContent = _fileContent + line ;
+		{
+			_fileContent += line;
+			if (!infile.eof())
+				_fileContent += "\n";
+		}
 		infile.close();
 		findReplaceWrite();
 }

@@ -15,7 +15,6 @@ _name(name), _weapon(weapon)
 HumanA::HumanA(const HumanA & copy) : _weapon(copy._weapon)
 {
     this->_name = copy._name;
-	this->_weapon = copy._weapon;
 }
 HumanA& HumanA::operator=(HumanA const & inst)
 {
